@@ -3,9 +3,9 @@ import "../styles/SearchBar.css"
 
 const SearchBar = () => {
     return (
-        <div>
-            <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <div className= "container searchbar justify-content-center navbar">
+            <form className="form-inline ">
+                <input className="form-control " type="search" placeholder="Search"/>
             </form>
         </div>
     );
