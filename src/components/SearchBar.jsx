@@ -1,11 +1,12 @@
 import React from "react";
-import "../styles/SearchBar.css"
+import "../styles/SearchBar.css";
 
-const SearchBar = () => {
+
+const SearchBar = ({searchChanges}) => {
     return (
         <div className= "container searchbar justify-content-center navbar">
             <form className="form-inline ">
-                <input className="form-control " type="search" placeholder="Search"/>
+                <input className="form-control " type="search" placeholder="Search" onChange={e => searchChanges(e)}/>
             </form>
         </div>
     );

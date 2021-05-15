@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/EmployeeTable.css";
 
-const EmployeeTable = (props) => {
+const EmployeeTable = ({ employees }) => {
   return (
     <table className="table container  table-striped table-hover">
       <thead>
@@ -14,30 +14,37 @@ const EmployeeTable = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">image</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>Mark</td>
-
-        </tr>
-        <tr>
-          <th scope="row">image</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-          <td>Mark</td>
-
-        </tr>
-        <tr>
-          <th scope="row">image</th>
-          <td >Larry the Bird</td>
-          <td>@twitter</td>
-          <td>@Dingo</td>
-          <td>Mark</td>
-
-        </tr>
+        {employees[0] !== undefined && employees[0].name !== undefined ? (
+          employees.map(({ login, name, picture, phone, email, dob }) => {
+            return (
+              <tr key={login.uuid}>
+                <td data-th="Image" className="align-middle">
+                  <img
+                    src={picture.medium}
+                    alt={"profile image for " + name.first + " " + name.last}
+                    className="img-responsive"
+                  />
+                </td>
+                <td data-th="Name" className="name-cell align-middle">
+                  {name.first} {name.last}
+                </td>
+                <td data-th="Phone" className="align-middle">
+                  {phone}
+                </td>
+                <td data-th="Email" className="align-middle">
+                  <a href={"mailto:" + email} target="__blank">
+                    {email}
+                  </a>
+                </td>
+                <td data-th="DOB" className="align-middle">
+                  {dob.date}
+                </td>
+              </tr>
+            );
+          })
+        ) : (
+          <></>
+        )}
       </tbody>
     </table>
   );
