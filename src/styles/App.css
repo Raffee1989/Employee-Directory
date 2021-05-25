@@ -2,3 +2,14 @@ body{
     background: #EFEEE7;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+.searchbar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: red;
+    }
+
+
+
+
+

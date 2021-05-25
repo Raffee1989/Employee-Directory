@@ -3,7 +3,7 @@ import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <header className = "container">
+    <header className = "container header">
       <h1 className = "text-center" >Employee Directory</h1>
 
       <h6 className = "text-center" >

@@ -1,10 +1,10 @@
 import React from "react";
+import "../styles/SearchBar.css";
 
 const SearchBar = (props) => {
-  // Setting the component's initial state
 
   return (
-    <nav className="navbar navbar-light bg-light justify-content-center">
+    <nav className="navbar container navbar-light bg-light justify-content-center searchbar">
       <form className="form-inline m-2" onSubmit={props.handleFormSubmit}>
         <input
           className="form-control"

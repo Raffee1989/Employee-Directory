@@ -2,7 +2,7 @@ import React from "react";
 
 const EmployeeTable = (props) => {
   return (
-    <table className="table table-striped table-sortable text-center">
+    <table className="table table-striped table-sortable text-center xs">
       <thead>
         <tr>
           <th scope="col">Image</th>
@@ -27,7 +27,7 @@ const EmployeeTable = (props) => {
           const { first, last } = employee.name;
           const fullName = `${first} ${last}`;
 
-          // Format date
+          // Date Format
           const dob = props.formatDate(employee.dob.date);
 
           return (
