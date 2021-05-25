@@ -1,4 +1,4 @@
-# Employee Directory
+# [Employee Directory](https://employeedirectoryraffee.herokuapp.com/)
 ## Description
 A react app for employee directory. Using this app will allow you to access all the general information about your employees. This app will give you the access to search or filter any targeted employee using their information like name or last name, email or phone number.
  
@@ -13,6 +13,9 @@ This app uses some dependencies, therefore after cloning the repo into your mach
 1. `react-dom`
 1. `react-scripts`
 1. `web-vitals`
+
+## Deployed Link 
+[Heroku](https://employeedirectoryraffee.herokuapp.com/)
  
 ## Questions
 GitHub Repo: [Abouzar Raffee](https://github.com/Raffee1989)
