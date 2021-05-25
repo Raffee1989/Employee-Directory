@@ -2,7 +2,7 @@ import React from "react";
 
 const EmployeeTable = (props) => {
   return (
-    <table className="table table-striped table-sortable text-center xs">
+    <table className="table table-striped table-sortable text-center ">
       <thead>
         <tr>
           <th scope="col">Image</th>
